@@ -5,15 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boston College Coalition for the Homeless</title>
     <style>
+        /* Font Face Definitions */
+        @font-face {
+            font-family: 'TeX Gyre Bonum';
+            src: url('fonts/texgyrebonum-regular.woff2') format('woff2'),
+                 url('fonts/texgyrebonum-regular.woff') format('woff'),
+                 url('fonts/texgyrebonum-regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'TeX Gyre Bonum';
+            src: url('fonts/texgyrebonum-bold.woff2') format('woff2'),
+                 url('fonts/texgyrebonum-bold.woff') format('woff'),
+                 url('fonts/texgyrebonum-bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Color Variables */
+        :root {
+            --primary-bg: #000000;
+            --primary-text: #000000;
+            --secondary-accent: #ba004a;
+            --link-color: #9eb838;
+            --light-bg: #f2e9e4;
+            --page-bg: #fafdfe;
+            --footer-bg: #333;
+        }
+
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'TeX Gyre Bonum', serif;
             margin: 0;
             padding: 0;
-            background-color: #fdfcfb;
-            color: #333;
+            background-color: var(--page-bg);
+            color: var(--primary-text);
         }
+
+        /* Header */
         header {
-            background-color: #333;
+            background-color: var(--primary-bg);
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -26,36 +59,46 @@
             font-size: 1.1rem;
             margin-top: 10px;
         }
+
+        /* Sections */
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
         h2 {
-            color: #b85c38;
+            color: var(--secondary-accent);
             margin-top: 0;
         }
+
+        /* Images */
         img {
             display: block;
             max-width: 100%;
             margin: 20px auto;
             border-radius: 8px;
         }
+
+        /* Numbers Box */
         .numbers {
-            background-color: #f2e9e4;
+            background-color: var(--light-bg);
             padding: 20px;
             border-radius: 8px;
             text-align: center;
             margin-top: 20px;
         }
+
+        /* Footer */
         footer {
-            background-color: #333;
+            background-color: var(--footer-bg);
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        /* Links */
         a {
-            color: #b85c38;
+            color: var(--link-color);
             text-decoration: none;
         }
         a:hover {
@@ -72,8 +115,6 @@
     <section>
         <h2>About Us</h2>
         <p>Boston College Coalition for the Homeless was founded in September 2024 to mobilize the Boston College community in service of Boston’s most vulnerable populations...</p>
-        
-        <!-- IMAGE PLACEHOLDER -->
         <img src="images/about-us.jpg" alt="About Us Image">
 
         <h2>Our Mission</h2>
@@ -87,8 +128,6 @@
             <li>Education</li>
             <li>Advocacy</li>
         </ul>
-
-        <!-- IMAGE PLACEHOLDER -->
         <img src="images/what-we-do.jpg" alt="What We Do Image">
     </section>
 
@@ -96,14 +135,10 @@
         <h2>Programs & Events</h2>
         <h3>Fall Program: A Panel Event on Equitable Medical Care</h3>
         <p>Boston College Coalition for the Homeless hosted a panel discussion featuring Dr. Jim O’Connell...</p>
-
-        <!-- IMAGE PLACEHOLDER -->
         <img src="images/fall-program.jpg" alt="Fall Program Image">
 
         <h3>Spring Programming: Stories from the Shelter</h3>
         <p>Spring programming featured a fundraiser and speaker event titled Stories from the Shelter...</p>
-
-        <!-- IMAGE PLACEHOLDER -->
         <img src="images/spring-program.jpg" alt="Spring Program Image">
     </section>
 
@@ -118,7 +153,6 @@
 
     <section>
         <h2>Leadership Team</h2>
-        <!-- IMAGE PLACEHOLDER -->
         <img src="images/leadership.jpg" alt="Leadership Team Image">
     </section>
 
